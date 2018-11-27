@@ -35,7 +35,7 @@ Template Name: Modele cours
 							<?php 
 								$call = get_sub_field("call_to_action_texte"); 
 								if($call) { ?>
-									<a href="<?php the_sub_field('call_to_action'); ?>" class="button">
+									<a href="<?php the_sub_field('call_to_action'); ?>" class="button" target="_blank">
 										<?php the_sub_field("call_to_action_texte"); ?>
 									</a>
 								<?php }
@@ -47,9 +47,9 @@ Template Name: Modele cours
 			</div>
 		</div>
 
-		<div class="contentPage" <?php live_edit('galerie_dimages'); ?>>
+		<div class="contentPage" <?php live_edit('texte_page, galerie_dimages, video'); ?>>
 
-			<div class="team" <?php live_edit('texte_page'); ?>>
+			<div class="team">
 				<?php if(get_field("texte_page")) { ?>
 					<div class="wysiwyg single Spacer">
 						<?php the_field("texte_page"); ?>

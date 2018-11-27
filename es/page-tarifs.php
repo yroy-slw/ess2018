@@ -13,11 +13,11 @@ Template Name: Modele tarifs
 </style>
 	<div class="content">
 
-		<section class="pageTitle" <?php live_edit('titre_de_la_page, sous_titre_de_la_page, banner'); ?>>
+		<section class="pageTitle" <?php live_edit('titre_de_la_page, sous_titre_de_la_page, lien_pdf, banner'); ?>>
 			<div class="content">
 				<h1><?php the_field("titre_de_la_page"); ?></h1>
 				<p><?php the_field("sous_titre_de_la_page"); ?></p>
-				<a class="button" href="">Liste de prix pdf</a>
+				<a class="button" href="<?php the_field('lien_pdf'); ?>" target="_blank">Liste de prix pdf</a>
 			</div>
 		</section>
 		<div class="fond" style="background: url(<?php the_field('banner'); ?>); background-size: cover; background-position: center;"></div>
