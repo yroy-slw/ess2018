@@ -82,7 +82,7 @@
 			</div>
 		</div>
 
-		<div class="subNav hidden" id="ttt">
+		<!--<div class="subNav hidden" id="ttt">
 			
 			<ul class="menuList">
 				<h3>Tarifs</h3>
@@ -90,7 +90,7 @@
 				<li><a href="https://yannroy.com/es2018/conditions-generales/">Conditions générales</a></li>
 			</ul>
 		
-		</div>
+		</div>-->
 
 		<div class="subNav hidden" id="three">
 			
@@ -108,9 +108,9 @@
 			
 			<ul class="menuList">
 				<h3>Activités</h3>
-				<li><a href="https://yannroy.com/es2018/les-formules/">L'és formules</a></li>
+				<!--<li><a href="https://yannroy.com/es2018/les-formules/">L'és formules</a></li>-->
 				<li><a href="https://yannroy.com/es2018/les-magic/">L'és Magic</a></li>
-				<li><a href="https://yannroy.com/es2018/les-entreprise/">L'és entreprise</a></li>
+				<!--<li><a href="https://yannroy.com/es2018/les-entreprise/">L'és entreprise</a></li>-->
 			</ul>
 		</div>
 

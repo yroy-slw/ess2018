@@ -88,7 +88,7 @@
 			document.querySelector('.overlay').addEventListener('click', closeAllTrigger);
 
 			document.getElementById("menu-item-30").addEventListener('click', openNavOne);
-			document.getElementById("menu-item-31").addEventListener('click', openNavTTT);
+			//document.getElementById("menu-item-31").addEventListener('click', openNavTTT);
 			document.getElementById("menu-item-32").addEventListener('click', openNavTwo);
 			document.getElementById("menu-item-33").addEventListener('click', openNavThree);
 			document.getElementById("menu-item-335").addEventListener('click', openNavuuu);
@@ -100,7 +100,7 @@
 
 					document.getElementById("one").classList.remove("open");
 					document.getElementById("two").classList.remove("open");
-					document.getElementById("ttt").classList.remove("open");
+					//document.getElementById("ttt").classList.remove("open");
 					document.getElementById("three").classList.remove("open");
 					document.getElementById("uuu").classList.remove("open");
 
@@ -118,7 +118,7 @@
 
 					document.getElementById("one").classList.remove("open");
 					document.getElementById("two").classList.remove("open");
-					document.getElementById("ttt").classList.remove("open");
+					//document.getElementById("ttt").classList.remove("open");
 					document.getElementById("three").classList.remove("open");
 					document.getElementById("uuu").classList.remove("open");
 					$(".overlay").fadeOut();
@@ -145,7 +145,7 @@
 
 			}
 
-			function openNavTTT(e){
+			/*function openNavTTT(e){
 				closeAll();
 				$(".overlay").fadeIn();
 				document.getElementById("ttt").classList.toggle("open");
@@ -153,7 +153,7 @@
 
 				e.preventDefault();
 
-			}
+			}*/
 
 			function openNavThree(e){
 				closeAll();

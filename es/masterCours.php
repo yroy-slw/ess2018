@@ -46,7 +46,18 @@ Template Name: Modele master cours
 					<?php endwhile; ?>
 				</section>
 
-				<section class="contents" <?php live_edit('contenus'); ?>>
+				<section class="contents" <?php live_edit('texte_page, contenus'); ?>>
+
+					<?php if(get_field("texte_page")) { ?>
+						<div class="team">
+							<?php if(get_field("texte_page")) { ?>
+								<div class="wysiwyg single Spacer">
+									<?php the_field("texte_page"); ?>
+								</div>
+							<?php } ?>
+						</div>
+					<?php } ?>
+
 					<?php $i=0; while ( have_rows('contenus') ) : the_row(); $i++; ?>
 					<article id="link-<?php echo $i; ?>" data-aos="fade-up" data-aos-delay="<?php echo $i; ?>00" data-aos-once="true" class="display<?php echo $i; ?>" style="background: url(<?php the_sub_field("image"); ?>); background-size: cover; background-position: center;">
 		
