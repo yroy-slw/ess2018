@@ -47,7 +47,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="social">
+			<!--<div class="social">
 				<div class="inner">
 					<h4>Retrouvez-nous sur Facebook et Instagram</h4>
 					<div class="icons">
@@ -55,7 +55,7 @@
 						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Es Grimentz sur Instagram"></a>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</main>
 		<?php wp_footer(); ?>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -91,7 +91,7 @@
 			//document.getElementById("menu-item-31").addEventListener('click', openNavTTT);
 			document.getElementById("menu-item-32").addEventListener('click', openNavTwo);
 			document.getElementById("menu-item-33").addEventListener('click', openNavThree);
-			document.getElementById("menu-item-335").addEventListener('click', openNavuuu);
+			//document.getElementById("menu-item-335").addEventListener('click', openNavuuu);
 			document.getElementById("phone").addEventListener('click', openMobile);
 
 			function closeAll(){
@@ -108,7 +108,7 @@
 					if(myStyle > 0){
 					     $(".overlay").fadeOut();
 					}
-					
+
 				}
 			}
 
@@ -165,7 +165,7 @@
 
 			}
 
-			function openNavuuu(e){
+			/*function openNavuuu(e){
 				closeAll();
 				$(".overlay").fadeIn();
 				document.getElementById("uuu").classList.toggle("open");
@@ -173,7 +173,7 @@
 
 				e.preventDefault();
 
-			}
+			}*/
 
 			function openMobile(e){
 				document.getElementById("wrap").classList.toggle("openMobile");

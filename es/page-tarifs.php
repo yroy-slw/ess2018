@@ -142,7 +142,7 @@ Template Name: Modele tarifs
 					<?php the_field("texte_jardin_des_neiges_copie5"); ?>
 					<div class="double">
 						<div class="left">
-							<span>1 x 150min.</span>
+							<span>1 x 150 min.</span>
 							<table class="complex">
 								<?php while ( have_rows('tarif-gauche') ) : the_row(); ?>
 								<tr>
@@ -153,7 +153,7 @@ Template Name: Modele tarifs
 							</table>
 						</div>
 						<div class="right">
-							<span>3 x 150min.</span>
+							<span>3 x 150 min.</span>
 							<table class="complex">
 								<?php while ( have_rows('tarif-droite') ) : the_row(); ?>
 								<tr>
@@ -164,6 +164,7 @@ Template Name: Modele tarifs
 							</table>
 						</div>
 					</div>
+					<p class="adjustRed">* selon enneigement et conditions météorologiques *</p>
 				</div>
 				
 			</div>

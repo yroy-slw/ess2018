@@ -6,7 +6,7 @@
     <title><?php the_title(); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <?php wp_head(); ?>
@@ -19,8 +19,12 @@
 					<a href="<?php bloginfo('url'); ?>">
 						<img src="<?php bloginfo('template_url'); ?>/images/logo-es-grimentz.svg" alt="ES Grimentz - ecole suisse de ski">
 					</a>
+          <div class="icons">
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Es Grimentz sur Facebook"></a>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Es Grimentz sur Instagram"></a>
+					</div>
 				</div>
-				
+
 				<?php wp_nav_menu( array( 'theme_location' => 'pages' ) ); ?>
 
 				<div class="phoneNav" id="phone">
@@ -83,17 +87,17 @@
 		</div>
 
 		<!--<div class="subNav hidden" id="ttt">
-			
+
 			<ul class="menuList">
 				<h3>Tarifs</h3>
 				<li><a href="https://yannroy.com/es2018/tarifs/">Tarifs</a></li>
 				<li><a href="https://yannroy.com/es2018/conditions-generales/">Conditions générales</a></li>
 			</ul>
-		
+
 		</div>-->
 
 		<div class="subNav hidden" id="three">
-			
+
 			<ul class="menuList">
 				<h3>Infos pratique</h3>
 				<li><a href="https://yannroy.com/es2018/reservations/">Réservation</a></li>
@@ -105,9 +109,9 @@
 		</div>
 
 		<div class="subNav hidden" id="uuu">
-			
+
 			<ul class="menuList">
-				<h3>Activités</h3>
+				<h3>és Magic</h3>
 				<!--<li><a href="https://yannroy.com/es2018/les-formules/">L'és formules</a></li>-->
 				<li><a href="https://yannroy.com/es2018/les-magic/">L'és Magic</a></li>
 				<!--<li><a href="https://yannroy.com/es2018/les-entreprise/">L'és entreprise</a></li>-->
@@ -115,7 +119,7 @@
 		</div>
 
 		<div class="subNav hidden" id="two">
-			
+
 			<ul class="menuList">
 				<h3>Ecole</h3>
 				<li><a href="https://yannroy.com/es2018/the-es-team/">Team</a></li>
