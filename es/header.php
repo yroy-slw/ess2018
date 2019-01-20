@@ -20,8 +20,8 @@
 						<img src="<?php bloginfo('template_url'); ?>/images/logo-es-grimentz.svg" alt="ES Grimentz - ecole suisse de ski">
 					</a>
           <div class="icons">
-						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Es Grimentz sur Facebook"></a>
-						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Es Grimentz sur Instagram"></a>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/face.svg" alt="Es Grimentz sur Facebook"></a>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/insta.svg" alt="Es Grimentz sur Instagram"></a>
 					</div>
 				</div>
 
@@ -37,11 +37,12 @@
 				<div class="buttons">
 
 					<div class="selectBox">
-						<select class="lang">
+            <?php pll_the_languages( array( 'dropdown' => 1 ) ); ?>
+						<!--<select class="lang">
 							<option>FR</option>
 							<option>EN</option>
 							<option>DE</option>
-						</select>
+						</select>-->
 					</div>
 
 					<a href="" target="_blank" class="button booking">Booking</a>
@@ -101,7 +102,7 @@
 			<ul class="menuList">
 				<h3>Infos pratique</h3>
 				<li><a href="https://yannroy.com/es2018/reservations/">Réservation</a></li>
-				<li><a href="https://yannroy.com/es2018/rendez-vous/">Rendez-vous</a></li>
+				<li><a href="https://yannroy.com/es2018/infos-pratiques/rdv-et-horaires-projet/">Rendez-vous</a></li>
 				<li><a href="https://yannroy.com/es2018/garderie/">Garderie</a></li>
 				<li><a href="https://yannroy.com/es2018/agenda/">Agenda</a></li>
 				<li><a href="https://yannroy.com/es2018/contact/">Contact</a></li>

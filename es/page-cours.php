@@ -1,14 +1,14 @@
-<?php 
+<?php
 /*
 Template Name: Modele cours
-*/ 
+*/
 ?>
 
 <?php get_header(); ?>
 
 <style type="text/css">
 	footer {
-		
+
 	}
 </style>
 	<div class="content">
@@ -32,11 +32,19 @@ Template Name: Modele cours
 						<div class="content">
 							<h2><?php the_sub_field("titre"); ?></h2>
 							<p><?php the_sub_field("texte"); ?></p>
-							<?php 
-								$call = get_sub_field("call_to_action_texte"); 
+							<?php
+								$call = get_sub_field("call_to_action_texte");
 								if($call) { ?>
 									<a href="<?php the_sub_field('call_to_action'); ?>" class="button" target="_blank">
 										<?php the_sub_field("call_to_action_texte"); ?>
+									</a>
+								<?php }
+							?>
+							<?php
+								$call2 = get_sub_field("page");
+								if($call2) { ?>
+									<a href="<?php the_sub_field('page'); ?>" class="button">
+										<?php the_sub_field("page_texte"); ?>
 									</a>
 								<?php }
 							?>

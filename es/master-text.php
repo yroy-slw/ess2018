@@ -1,14 +1,14 @@
-<?php 
+<?php
 /*
 Template Name: Modele page texte
-*/ 
+*/
 ?>
 
 <?php get_header(); ?>
 
 <style type="text/css">
 	footer {
-		
+
 	}
 </style>
 	<div class="content">
@@ -31,6 +31,16 @@ Template Name: Modele page texte
 			<div class="team" <?php live_edit('texte'); ?>>
 				<div class="wysiwyg <?php if (is_page( 263 )) { echo 'single'; } ?>">
 					<?php the_field("texte"); ?>
+				</div>
+			</div>
+			<div class="team" <?php live_edit('texte_gauche, texte_droite'); ?>>
+				<div class="wysiwyg <?php if (is_page( 263 )) { echo 'single'; } ?> flexwis">
+					<div class="colGauche">
+						<?php the_field("texte_gauche"); ?>
+					</div>
+					<div class="colDroite">
+						<?php the_field("texte_droite"); ?>
+					</div>
 				</div>
 			</div>
 			<?php if(get_field("video")) { ?>

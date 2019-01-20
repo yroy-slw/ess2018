@@ -1,14 +1,14 @@
-<?php 
+<?php
 /*
 Template Name: Modele master cours
-*/ 
+*/
 ?>
 
 <?php get_header(); ?>
 
 <style type="text/css">
 	footer {
-		
+
 	}
 </style>
 	<div class="content">
@@ -33,11 +33,19 @@ Template Name: Modele master cours
 						<div class="content scrollTo">
 							<h2><?php the_sub_field("titre"); ?></h2>
 							<p><?php the_sub_field("texte"); ?></p>
-							<?php 
-								$call = get_sub_field("call_to_action_texte"); 
+							<?php
+								$call = get_sub_field("call_to_action_texte");
 								if($call) { ?>
 									<a href="#link-<?php echo $i; ?>" class="button">
 										<?php the_sub_field("call_to_action_texte"); ?>
+									</a>
+								<?php }
+							?>
+							<?php
+								$call2 = get_sub_field("page");
+								if($call2) { ?>
+									<a href="<?php the_sub_field('page'); ?>" class="button">
+										<?php the_sub_field("texte_page"); ?>
 									</a>
 								<?php }
 							?>
@@ -60,15 +68,15 @@ Template Name: Modele master cours
 
 					<?php $i=0; while ( have_rows('contenus') ) : the_row(); $i++; ?>
 					<article id="link-<?php echo $i; ?>" data-aos="fade-up" data-aos-delay="<?php echo $i; ?>00" data-aos-once="true" class="display<?php echo $i; ?>" style="background: url(<?php the_sub_field("image"); ?>); background-size: cover; background-position: center;">
-		
+
 						<div class="contentLeft">
 							<h2><?php the_sub_field("titre"); ?></h2>
 							<p><?php the_sub_field("texte"); ?></p>
 						</div>
 
 						<div class="contentRight">
-							<?php 
-								$call = get_sub_field("call_to_action_texte"); 
+							<?php
+								$call = get_sub_field("call_to_action_texte");
 								if($call) { ?>
 									<a href="<?php the_sub_field('call_to_action'); ?>" class="button">
 										<?php the_sub_field("call_to_action_texte"); ?>

@@ -1,5 +1,5 @@
 *
-	box-sizing: border-box;
+	box-sizing: border-box
 	outline: none
 
 $red: #FF0000
@@ -136,7 +136,7 @@ nav
 				border-radius: 5px
 				padding: 6px 0px 6px 10px
 				box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.36)
-				select.lang
+				select
 					width: auto
 					border-radius: 5px
 					-webkit-appearance: none
@@ -390,12 +390,14 @@ nav
 			color: $white
 		.shortCuts
 			display: flex
+			flex-wrap: wrap
 			justify-content: space-between
 			align-items: flex-start
 			max-width: $maxWidth
 			width: $full
 			padding: 0px 20px
 			margin: 0px auto
+			flex-wrap: wrap
 			@media screen and (max-width: $break-landscape)
 				flex-wrap: wrap
 			article
@@ -439,6 +441,14 @@ nav
 
 			.a2col
 				width: calc(50% - 40px)
+				@media screen and (max-width: $break-landscape)
+					width: calc(50% - 40px)
+					margin-bottom: 20px
+				@media screen and (max-width: $break-small)
+					width: $full
+					margin-bottom: 20px
+			.a6col
+				width: calc(33.333333% - 40px)
 				@media screen and (max-width: $break-landscape)
 					width: calc(50% - 40px)
 					margin-bottom: 20px
@@ -534,6 +544,11 @@ nav
 		@media screen and (max-width: $break-small)
 			width: $full
 			margin-bottom: 20px
+
+
+.content .bgPage .shortCuts
+	flex-wrap: wrap !important
+
 
 .content .bgPage .shortCuts
 	article.a3col
@@ -1096,6 +1111,11 @@ footer
 	max-width: 700px !important
 .Spacer
 	margin-top: 50px !important
+.flexwis
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
 .wysiwyg
 	max-width: 900px
 	width: $full
@@ -1103,6 +1123,11 @@ footer
 	margin: 0px auto
 	background: rgba(255, 255, 255, 0.8)
 	text-align: center
+	.colGauche, .colDroite
+		width: calc(50% - 10px)
+		@media screen and (max-width: $break-small)
+			width: 100%
+			margin-bottom: 20px
 	p
 		margin-bottom: 20px
 		img
@@ -1153,6 +1178,26 @@ footer
 	align-items: center
 
 
+
+.a6col
+	width: calc(33.333333% - 40px)
+	@media screen and (max-width: $break-landscape)
+		width: calc(50% - 40px)
+		margin-bottom: 20px
+	@media screen and (max-width: $break-small)
+		width: $full
+		margin-bottom: 20px
+
+
+.flexwis
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	.colGauche, .colDroite
+		width: calc(50% - 10px)
+		@media screen and (max-width: $break-small)
+			width: 100%
+			margin-bottom: 20px
 
 .swiper-pagination-bullet-active
 	background: $red !important
